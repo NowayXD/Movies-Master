@@ -47,8 +47,10 @@ async def start(client, message):
             InlineKeyboardButton('🔍 Search', switch_inline_query_current_chat=''),
             InlineKeyboardButton('🤖 Updates', url='https://t.me/Tgcalls_Music_update')
             ],[
-            InlineKeyboardButton('ℹ️ Help', callback_data='help'),
+            InlineKeyboardButton('❗Help', callback_data='help'),
             InlineKeyboardButton('😊 About', callback_data='about')
+            ],[
+            InlineKeyboardButton('⭕ Movie Requests ⭕', url='https://t.me/Beast_HD_Flims')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_photo(
@@ -67,7 +69,7 @@ async def start(client, message):
         btn = [
             [
                 InlineKeyboardButton(
-                    "🤖 Join Updates Channel", url=invite_link.invite_link
+                    "⭕ Join Updates Channel ⭕", url=invite_link.invite_link
                 )
             ]
         ]
@@ -92,6 +94,8 @@ async def start(client, message):
             ],[
             InlineKeyboardButton('ℹ️ Help', callback_data='help'),
             InlineKeyboardButton('😊 About', callback_data='about')
+            ],[
+            InlineKeyboardButton('⭕ Movie Requests ⭕', url='https://t.me/Beast_HD_Flims')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_photo(
